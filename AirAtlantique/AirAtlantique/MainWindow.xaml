@@ -19,7 +19,7 @@
 
             <TextBlock Background="White" Text= "Prénom &#xa;nom" FontSize="30px" TextAlignment="Center" Padding="10"/>
 
-            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="#203864" Height="58">
+            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="green" Height="58">
                 <TextBlock Text="AJOUTER"/>
             </Button>
 
@@ -34,7 +34,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="66,158,10,106" >
-            <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Click="avionbutton_Click">
+            <Button   FontSize="30px" Foreground="White"       Background="green" Height="55" VerticalAlignment="Top" Click="avionbutton_Click">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
                     <TextBlock Text="AVION"/>
