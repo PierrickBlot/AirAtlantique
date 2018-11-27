@@ -1,0 +1,168 @@
+﻿<Window 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Class="AirAtlantique.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique"
+        mc:Ignorable="d"
+
+        Title="MainWindow" Height="600" Width="800" Background="#b4c7e7">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,441">
+
+            <TextBlock Background="White" Text= "Prénom &#xa;nom" FontSize="30px" TextAlignment="Center" Padding="10"/>
+
+            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="#203864" Height="58">
+                <TextBlock Text="AJOUTER"/>
+            </Button>
+
+            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top"  Background="#203864" Height="58">
+                <TextBlock Text="MODIFIER"/>
+            </Button>
+
+            <Button    FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="Green" Height="58">
+                <TextBlock  Text="SUPPRIMER"/>
+            </Button>
+
+        </StackPanel>
+
+        <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Click="avionbutton_Click" Margin="0,133,470,0">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                <TextBlock Text="AVION"/>
+            </StackPanel>
+        </Button>
+
+        <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Margin="405,349,96,0">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                <TextBlock Text="VOLS"/>
+            </StackPanel>
+        </Button>
+        <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Margin="0,349,470,0" >
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                <TextBlock Text="LIGNES"/>
+            </StackPanel>
+        </Button>
+
+        <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Margin="405,133,96,0" >
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon Kind="PlaneShield" Margin="10px" Height="20px" Width="20px"/>
+                <TextBlock Text="AEROPORTS"/>
+            </StackPanel>
+        </Button>
+
+
+
+
+
+        <ListBox Margin="0,188,470,225" SelectionChanged="ListBox_SelectionChanged" Background="White">
+            <ListBoxItem Width="277">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="AIRBUS 403" TextAlignment="left" Height="28" Width="119" FontSize="20px" />
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="123" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Width="295">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="BOEING 124" TextAlignment="Left" Height="28" Width="134" FontSize="20px" />
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="117" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem/>
+
+
+        </ListBox>
+
+
+
+
+        <ListBox Margin="405,188,96,225" SelectionChanged="ListBox_SelectionChanged" Background="White">
+            <ListBoxItem Width="277">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="NTE NANTES" TextAlignment="left" Height="28" Width="119" FontSize="20px" />
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="123" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextAlignment="Left" Height="28" Width="134" FontSize="20px" ><Run Text="CDG  ROISSY"/><LineBreak/><Run/></TextBlock>
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="117" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem/>
+
+
+        </ListBox>
+
+
+
+
+        <ListBox Margin="0,404,470,0" SelectionChanged="ListBox_SelectionChanged" Background="White">
+            <ListBoxItem Width="277">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="LIGNE 23" TextAlignment="left" Height="28" Width="119" FontSize="20px" />
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="123" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextAlignment="Left" Height="28" Width="134" FontSize="20px" ><Run Text="  "/><Run Text="LIGNE 45"/></TextBlock>
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="117" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem/>
+
+
+        </ListBox>
+
+
+        <ListBox Margin="405,404,96,0" SelectionChanged="ListBox_SelectionChanged" Background="White">
+            <ListBoxItem Width="287">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextAlignment="left" Height="28" Width="126" FontSize="20px" Text="paris-naples" />
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="123" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+            <ListBoxItem Width="300">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock TextAlignment="Left" Height="28" Width="137" FontSize="20px" ><Run Text="n"/><Run Text="aples-moscou"/></TextBlock>
+                    <materialDesign:PackIcon Kind="Clear" Margin="10" Height="20px" Width="20px"   />
+                    <TextBlock Text="SUPPRIMER" TextAlignment="Left" Height="28" Width="117" FontSize="20px" />
+
+                </StackPanel>
+            </ListBoxItem>
+
+            <ListBoxItem/>
+
+
+        </ListBox>
+
+
+    </Grid>
+
+
+</Window>
