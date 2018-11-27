@@ -10,6 +10,9 @@
 
         Title="MainWindow" Height="600" Width="800" Background="#b4c7e7">
     <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
 
         <StackPanel Orientation="Horizontal" Margin="0,0,0,441">
@@ -30,51 +33,47 @@
 
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Margin="96,133,10,0" >
+        <StackPanel Orientation="Horizontal" Margin="66,158,10,106" >
             <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" Click="avionbutton_Click">
                 <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px"/>
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
                     <TextBlock Text="AVION"/>
                 </StackPanel>
             </Button>
 
             <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top">
                 <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px"/>
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
                     <TextBlock Text="VOLS"/>
                 </StackPanel>
-           </Button>
+            </Button>
 
             <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" >
                 <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px"/>
-                    <TextBlock Text="Lignes"/>
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                    <TextBlock Text="LIGNES"/>
                 </StackPanel>
             </Button>
 
             <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" >
                 <StackPanel Orientation="Horizontal">
-                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px"/>
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px" Height="20px" Width="20px"/>
                     <TextBlock Text="AEROPORTS"/>
                 </StackPanel>
             </Button>
 
-            
-         
-            
-            
-            
+
         </StackPanel>
 
-        <StackPanel Margin="96,198,409,0">
-           
+        <StackPanel Margin="91,216,414,-18">
+
             <TextBox    Text="AVION" FontSize="30px" TextAlignment="Center" BorderBrush="Black" />
             <TextBox   Text="MARQUE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
             <TextBox   Text="TYPE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
             <TextBox    Text="CAPACITE" FontSize="30px" TextAlignment="Center" BorderBrush="Black" TextChanged="TextBox_TextChanged_1"/>
-           
+
         </StackPanel>
-        <StackPanel Margin="383,198,10,0">
+        <StackPanel Margin="383,216,10,-18">
 
             <TextBox    FontSize="30px" TextAlignment="Center" BorderBrush="Black" />
             <TextBox   FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
@@ -84,7 +83,7 @@
         </StackPanel>
         <Frame Content="Frame" HorizontalAlignment="Left" Height="100" Margin="-18,722,0,-253" VerticalAlignment="Top" Width="100"/>
 
-        <!--<Button   Content="VALIDER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="445,649,0,0" VerticalAlignment="Top" Width="276" Height="71" Background="#203864"/>-->
+       <Button   Content="VALIDER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="276" Height="71" Background="#203864" Margin="488,446,0,0"/>
 
     </Grid>
 
