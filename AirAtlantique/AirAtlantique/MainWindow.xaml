@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AirAtlantique"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="1000" Width="800" Background="#b4c7e7">
+    <Grid Margin="10,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="identifianttextblock" Margin="0,0,647,838" Background="White" Text= "Prénom &#xa;nom" FontSize="30px" TextAlignment="Center" />
+        <Button   x:Name="avionbutton" Content="AVION" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="135,0,0,0" VerticalAlignment="Top" Width="145" Height="71" Background="#203864"/>
+        <Button   x:Name="volbutton" Content="VOLS" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="280,0,0,0" VerticalAlignment="Top" Width="145" Height="71" Background="#203864"/>
+        <Button   x:Name="lignebutton" Content="LIGNES" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="425,0,0,0" VerticalAlignment="Top" Width="150" Height="71" Background="#203864"/>
+        <Button   x:Name="aeroportbutton" Content="AEROPORTS" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="575,0,0,0" VerticalAlignment="Top" Width="207" Height="71" Background="#203864"/>
+
+
+
+        <TextBox   Margin="0,373,450,534"  Text="AVION" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+        <TextBox   Margin="332,373,15,534"  Text="" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+        <TextBox x:Name="marque"  Margin="0,435,450,472"  Text="MARQUE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+        <TextBox   Margin="332,497,15,410"  Text="" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+        <TextBox   Margin="0,497,450,410"  Text="TYPE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+        <TextBox   Margin="333,434,14,471"  Text="" FontSize="30px" TextAlignment="Center" BorderBrush="Black" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox   Margin="0,559,450,348"  Text="CAPACITE" FontSize="30px" TextAlignment="Center" BorderBrush="Black" TextChanged="TextBox_TextChanged_1"/>
+        <TextBox   Margin="332,559,15,348"  Text="" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+
+        <Button    Content="AJOUTER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="3,297,0,0" VerticalAlignment="Top" Width="255" Height="71" Background="#203864"/>
+        <Button   Content="MODIFIER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="263,297,0,0" VerticalAlignment="Top" Width="252" Height="71" Background="#203864"/>
+        <Button   Content="SUPPRIMER " FontSize="30px" Foreground="White" HorizontalAlignment="Left"  Margin="515,297,0,0" VerticalAlignment="Top" Width="252" Height="71" Background="#203864"/>
+
     </Grid>
 </Window>
