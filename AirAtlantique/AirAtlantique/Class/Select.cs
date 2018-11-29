@@ -7,13 +7,7 @@ using MySql.Data.MySqlClient;
 
 namespace AirAtlantique.Class
 {
-    public class Supprimer
+    class Select
     {
-        int id = 1;
-        Connexion cnx = new Connexion();
-
-
-        MySqlCommand delete = new MySqlCommand("DELETE FROM avion WHERE numero =1");
     }
 }
-
