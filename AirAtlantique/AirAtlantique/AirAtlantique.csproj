@@ -69,6 +69,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Class\Supprimer.cs" />
     <Compile Include="supprimer.xaml.cs">
       <DependentUpon>supprimer.xaml</DependentUpon>
     </Compile>

@@ -5,9 +5,9 @@ using MySql.Data.MySqlClient;
 
 namespace AirAtlantique.Class
 {
-    class Connexion
+    public class Connexion
     {
-        private MySqlConnection connection;
+        public MySqlConnection cnx;
 
         // Constructeur
         public void Bdd()
@@ -16,11 +16,11 @@ namespace AirAtlantique.Class
         }
 
         // Méthode pour initialiser la connexion
-        private void InitConnexion()
+        public void InitConnexion()
         {
             //chaîne de connexion
             string connectionString = "SERVER=127.0.0.1; DATABASE=aa_admin; UID=aa_admin; PASSWORD=epsi2018";
-            this.connection = new MySqlConnection(connectionString);
+            this.cnx = new MySqlConnection(connectionString);
         }
     }
 }
