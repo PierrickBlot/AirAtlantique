@@ -33,7 +33,7 @@
 
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Margin="66,158,10,106" >
+        <StackPanel Orientation="Horizontal" Margin="66,158,10,106" Background="White">
             <Button   FontSize="30px" Foreground="White"       Background="green" Height="55" VerticalAlignment="Top" Click="avionbutton_Click">
                 <StackPanel Orientation="Horizontal">
                     <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
@@ -83,7 +83,7 @@
         </StackPanel>
         <Frame Content="Frame" HorizontalAlignment="Left" Height="100" Margin="-18,722,0,-253" VerticalAlignment="Top" Width="100"/>
 
-       <Button   Content="VALIDER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="276" Height="71" Background="#203864" Margin="488,446,0,0"/>
+       <Button   Content="VALIDER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="276" Height="71" Background="#203864" Margin="506,488,0,0"/>
 
     </Grid>
 

@@ -61,7 +61,43 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Class\Connexion.cs" />
+    <Compile Include="obj\Debug\App.g.cs" />
+    <Compile Include="obj\Debug\App.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow - Copier.g.i.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.cs" />
+    <Compile Include="obj\Debug\MainWindow.g.i.cs" />
+    <Compile Include="obj\Debug\supprimer.g.i.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\App.g.cs" />
+    <Compile Include="obj\Release\MainWindow.g.cs" />
+    <Compile Include="Views\supprimer.xaml.cs">
+      <DependentUpon>supprimer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ajoutervol.xaml.cs">
+      <DependentUpon>ajoutervol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ajouterligne.xaml.cs">
+      <DependentUpon>ajouterligne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ajouteaeroport.xaml.cs">
+      <DependentUpon>ajouteaeroport.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\modifieravion.xaml.cs">
+      <DependentUpon>modifieravion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\modifiervol.xaml.cs">
+      <DependentUpon>modifiervol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\modifierligne.xaml.cs">
+      <DependentUpon>modifierligne.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\modifieraeroport.xaml.cs">
+      <DependentUpon>modifieraeroport.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\ajouteravion.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -69,10 +105,42 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\ajouteravion.xaml.cs">
+      <DependentUpon>ajouteravion.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\supprimer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ajoutervol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ajouterligne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ajouteaeroport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\modifieravion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\modifiervol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\modifierligne.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\modifieraeroport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -88,10 +156,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\AirAtlantique.g.resources" />
+    <EmbeddedResource Include="obj\Debug\AirAtlantique.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\AirAtlantique.exe.config" />
+    <None Include="obj\Debug\AirAtlantique.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\AirAtlantique.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\AirAtlantique.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\AirAtlantique_MarkupCompile.cache" />
+    <None Include="obj\Debug\AirAtlantique_MarkupCompile.i.cache" />
+    <None Include="obj\Debug\AirAtlantique_MarkupCompile.lref" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\AirAtlantique.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\AirAtlantique_MarkupCompile.cache" />
+    <None Include="obj\Release\AirAtlantique_MarkupCompile.lref" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -101,9 +183,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\AirAtlantique.exe" />
+    <Content Include="bin\Debug\AirAtlantique.pdb" />
+    <Resource Include="obj\Debug\AirAtlantique.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\AirAtlantique.exe" />
+    <Content Include="obj\Debug\AirAtlantique.pdb" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Ressources\aaIcons.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
