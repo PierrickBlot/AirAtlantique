@@ -7,13 +7,56 @@ using MySql.Data.MySqlClient;
 
 namespace AirAtlantique.Class
 {
-    public class Supprimer
+    public class Bdd
     {
-        int id = 1;
-        Connexion cnx = new Connexion();
 
+        private MySqlConnection connection;
 
-        MySqlCommand delete = new MySqlCommand("DELETE FROM avion WHERE numero =1");
+        // Constructeur
+        public Bdd()
+        {
+            this.InitConnexion();
+        }
+
+        // Méthode pour initialiser la connexion
+        private void InitConnexion()
+        {
+            // Création de la chaîne de connexion
+            string connectionString = "SERVER=127.0.0.1; DATABASE=mli; UID=root; PASSWORD=";
+            this.connection = new MySqlConnection(connectionString);
+        }
+
+        // Méthode pour ajouter un contact
+        public void Supprimer()
+        {
+            try
+            {
+                // Ouverture de la connexion SQL
+                this.connection.Open();
+
+                // Création d'une commande SQL en fonction de l'objet connection
+                MySqlCommand cmd = this.connection.CreateCommand();
+
+                // Requête SQL
+                cmd.CommandText = "";
+
+                // utilisation de l'objet contact passé en paramètre
+                cmd.Parameters.AddWithValue();
+                cmd.Parameters.AddWithValue();
+                cmd.Parameters.AddWithValue();
+
+                // Exécution de la commande SQL
+                cmd.ExecuteNonQuery();
+
+                // Fermeture de la connexion
+                this.connection.Close();
+            }
+            catch
+            {
+                // Gestion des erreurs :
+                // Possibilité de créer un Logger pour les exceptions SQL reçus
+                // Possibilité de créer une méthode avec un booléan en retour pour savoir si le contact à été ajouté correctement.
+            }
+        }
     }
-}
 
