@@ -1,0 +1,91 @@
+﻿<Window 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        x:Class="AirAtlantique.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AirAtlantique"
+        mc:Ignorable="d"
+
+        Title="MainWindow" Height="600" Width="800" Background="#b4c7e7">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,441">
+
+            <TextBlock Background="White" Text= "Prénom &#xa;nom" FontSize="30px" TextAlignment="Center" Padding="10"/>
+
+            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="#203864" Height="58">
+                <TextBlock Text="AJOUTER"/>
+            </Button>
+
+            <Button   FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="green"  Height="58">
+                <TextBlock Text="MODIFIER"/>
+            </Button>
+
+            <Button    FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Background="#203864" Height="58">
+                <TextBlock  Text="SUPPRIMER"/>
+            </Button>
+
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="66,158,10,106" Background="White">
+            <Button   FontSize="30px" Foreground="White"       Background="green" Height="55" VerticalAlignment="Top" Click="avionbutton_Click">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                    <TextBlock Text="AVION"/>
+                </StackPanel>
+            </Button>
+
+            <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                    <TextBlock Text="VOLS"/>
+                </StackPanel>
+            </Button>
+
+            <Button   FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" >
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10" Height="20px" Width="20px"/>
+                    <TextBlock Text="LIGNES"/>
+                </StackPanel>
+            </Button>
+
+            <Button  FontSize="30px" Foreground="White"       Background="#203864" Height="55" VerticalAlignment="Top" >
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="PlaneShield" Margin="10px" Height="20px" Width="20px"/>
+                    <TextBlock Text="AEROPORTS"/>
+                </StackPanel>
+            </Button>
+
+
+        </StackPanel>
+
+        <StackPanel Margin="91,216,414,-18">
+
+            <TextBox    Text="AVION" FontSize="30px" TextAlignment="Center" BorderBrush="Black" />
+            <TextBox   Text="MARQUE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+            <TextBox   Text="TYPE" FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+            <TextBox    Text="CAPACITE" FontSize="30px" TextAlignment="Center" BorderBrush="Black" TextChanged="TextBox_TextChanged_1"/>
+
+        </StackPanel>
+        <StackPanel Margin="383,216,10,-18">
+
+            <TextBox    FontSize="30px" TextAlignment="Center" BorderBrush="Black" />
+            <TextBox   FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+            <TextBox    FontSize="30px" TextAlignment="Center" BorderBrush="Black"/>
+            <TextBox     FontSize="30px" TextAlignment="Center" BorderBrush="Black" TextChanged="TextBox_TextChanged_1"/>
+
+        </StackPanel>
+        <Frame Content="Frame" HorizontalAlignment="Left" Height="100" Margin="-18,722,0,-253" VerticalAlignment="Top" Width="100"/>
+
+        <Button   Content="VALIDER" FontSize="30px" Foreground="White" HorizontalAlignment="Left"   VerticalAlignment="Top" Width="276" Height="71" Background="#203864" Margin="506,488,0,0"/>
+
+    </Grid>
+
+
+</Window>
