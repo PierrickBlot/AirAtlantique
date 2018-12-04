@@ -69,6 +69,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+<<<<<<< HEAD
+    <Compile Include="Class\Supprimer.cs" />
+    <Compile Include="supprimer.xaml.cs">
+=======
     <Compile Include="Class\Connexion.cs" />
     <Compile Include="obj\Debug\App.g.cs" />
     <Compile Include="obj\Debug\App.g.i.cs" />
@@ -82,6 +86,7 @@
     <Compile Include="obj\Release\App.g.cs" />
     <Compile Include="obj\Release\MainWindow.g.cs" />
     <Compile Include="Views\supprimer.xaml.cs">
+>>>>>>> master
       <DependentUpon>supprimer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ajoutervol.xaml.cs">
